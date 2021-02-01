@@ -69,23 +69,23 @@
                 <img class="schema-1" :class="selection_type_schema_main === 1 ? 'schema-1_animation' : ''" src="./assets/img/svg/schema-1.svg" alt="schema-2.1">
                 <img class="schema-2" :class="selection_type_schema_main === 2 ? 'schema-2_animation' : ''" src="./assets/img/svg/schema-2.svg" alt="schema-2.1">
                 <img class="schema-3" :class="selection_type_schema_main === 3 ? 'schema-3_animation' : ''" src="./assets/img/svg/schema-3.svg" alt="schema-2.1">
-                <img src="./assets/img/schema-1.png" alt="schema-1">
+                <img class="image-schemas" src="./assets/img/schema-1.png" alt="schema-1">
             </div>
 
             <div class="btn-column">
-                <div class="btn1 wave-effect" @click="selection_type_schema_main = 1">
+                <div class="btn1 wave-effect" :class="selection_type_schema_main === 1 ? 'active' : ''" @click="selection_type_schema_main === 1 ? selection_type_schema_main = 0 : selection_type_schema_main = 1">
                     <svg width="52" height="58" viewBox="0 0 52 58" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M26.4019 28.1564C26.4019 28.1564 20.5951 32.828 20.5951 36.6044C20.5951 38.2952 23.0839 39.9848 26.4019 39.9848C29.7175 39.9848 32.2064 38.2952 32.2064 36.6044C32.2064 32.6924 26.4019 28.1564 26.4019 28.1564ZM47.5711 19.6172C47.9071 15.5036 49.0999 11.7272 51.1999 8.26635L43.1371 0.199951C40.5907 2.39355 37.6891 3.60795 34.4011 3.82275C31.3891 4.09515 28.5343 3.52275 25.8499 2.10075C23.0875 3.47595 20.2435 4.05075 17.2784 3.82275C14.2124 3.54795 11.444 2.46075 8.96595 0.533551L0.880352 8.59635C2.86875 12.1076 3.97635 15.7808 4.19355 19.6172C4.29675 21.3836 3.79275 23.8136 2.66235 26.9576C2.14833 28.4427 1.6999 29.9498 1.31835 31.4744C1.03515 32.7284 0.858752 33.7484 0.801152 34.5116C0.759152 37.8596 1.69875 40.8848 3.62475 43.5716C5.12955 45.5336 7.61115 47.7008 11.0576 50.0696C14.8292 51.9896 17.7464 53.2352 19.7899 53.768L21.4844 54.5552C22.0183 54.8096 22.5896 55.0592 23.1847 55.3316C24.4699 56.1008 25.3723 56.936 25.8499 57.7988C26.4319 56.8664 27.3547 56.0516 28.5835 55.3316C29.3189 55.0149 30.0478 54.6837 30.7699 54.338L32.0491 53.7668C32.4859 53.5496 33.0607 53.3012 33.7519 53.0276C34.6114 52.6874 35.4755 52.359 36.3439 52.0424C38.3347 51.338 39.7867 50.6708 40.7059 50.0684C44.0491 47.6996 46.4935 45.5684 48.0475 43.6604C50.0431 40.9628 51.0115 37.9256 50.9671 34.5104C50.8483 32.9816 50.2015 30.5348 49.0267 27.2024C47.9071 23.9564 47.4103 21.4364 47.5711 19.6172ZM26.4019 43.364C19.0735 43.364 12.302 37.3112 12.302 29.846C12.302 24.776 16.1779 19.9868 17.2784 18.0176L20.5951 23.0876L26.4019 14.6396L32.2064 23.0876L35.5279 18.0176C36.6247 19.9868 40.5043 24.776 40.5043 29.846C40.5043 37.3112 33.7315 43.364 26.4019 43.364Z" fill="#A59D70"/>
                     </svg>
                     <p>Место расположения пожарного ДЕПО и пожарных гидрантов</p>
                 </div>
-                <div class="btn1 wave-effect" @click="selection_type_schema_main = 2">
+                <div class="btn1 wave-effect" :class="selection_type_schema_main === 2 ? 'active' : ''" @click="selection_type_schema_main === 2 ? selection_type_schema_main = 0 : selection_type_schema_main = 2">
                     <svg width="46" height="56" viewBox="0 0 46 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M23 0.5L0.5 10.5V25.5C0.5 39.375 10.1 52.35 23 55.5C35.9 52.35 45.5 39.375 45.5 25.5V10.5L23 0.5ZM23 27.975H40.5C39.175 38.275 32.3 47.45 23 50.325V28H5.5V13.75L23 5.975V27.975Z" fill="#A59D70"/>
                     </svg>                        
                     <p>Схема расположений постов охраны и маршрута движений</p>
                 </div>
-                <div class="btn1 wave-effect" @click="selection_type_schema_main = 3">
+                <div class="btn1 wave-effect" :class="selection_type_schema_main === 3 ? 'active' : ''" @click="selection_type_schema_main === 3 ? selection_type_schema_main = 0 : selection_type_schema_main = 3">
                     <svg width="32" height="48" viewBox="0 0 32 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M27.125 0.25L12.5 15.25L31.25 21.5L11.625 39.875L18 43.375L0 47.75L3.375 29.25L7 35.625L18.75 24L0 17.75L16.25 0.25H27.125Z" fill="#A59D70"/>
                     </svg>                        
@@ -116,10 +116,21 @@
 
             <div class="contact-column">
                 <div class="contact-info">
-                    <h1>Номера телефонов:</h1>
-                    <p>+7 (707) 123 45 67</p>
-                    <p>+7 (707) 123 45 67</p>
-                    <p>+7 (707) 123 45 67</p>
+                    <div class="company-logo">
+                        <img src="./assets/img/logo mad.png" alt="logo">
+                    </div>
+                    <div class="number">
+                        <h1>Номера телефонов:</h1>
+                        <p>+7 (701) 242 66 69</p>
+                        <p>+7 (771) 666 82 82</p>
+                    </div>
+                    <div class="about">
+                        <h1>О Компании</h1>
+                        <p>
+                            ©️ 2021, ТОО «Пайда 2» </br>
+                            Информация о павильоне опубликована с целью определения спроса на указанный продукт. Договоры о долевом участии в строительстве будут заключаться только после заключения договора о предоставлении гарантии с Фондом гарантирования или выдачи разрешения на привлечение денег дольщиков местным исполнительным органом.
+                        </p>
+                    </div>
                 </div>
                 <div id="map"></div>
             </div>

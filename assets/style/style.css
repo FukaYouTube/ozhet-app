@@ -19,11 +19,11 @@ html {
 
 .burger-icon img {
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
 
     width: 50px;
     height: 50px;
@@ -179,6 +179,81 @@ html {
     background-color: #ffffff;
 }
 
+.top-block-open-model {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: 160px;
+    cursor: pointer;
+}
+.bottom-block-open-model {
+    position: absolute;
+    top: 270px;
+    width: 100%;
+    height: 160px;
+    cursor: pointer;
+}
+
+.model-window-image-1 .close-icon,
+.model-window-image-2 .close-icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15%;
+    left: 85%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.model-window-image-1 {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .5);
+}
+.model-window-image-1 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.model-window-image-2 {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .5);
+}
+.model-window-image-2 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
 .schema-plan-image {
     position: relative;
 
@@ -187,7 +262,7 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
-.schema-plan-image img {
+.schema-plan-image .image-schemas {
     width: 100%;
 }
 .schema-plan-image .schema-1 {
@@ -198,7 +273,7 @@ html {
     transform: translate(-50%, -50%);
     opacity: 0;
     overflow: hidden;
-    transition: 1s opacity, 1s top;
+    transition: .5s opacity, .5s top;
 }
 .schema-plan-image .schema-2 {
     position: absolute;
@@ -208,7 +283,7 @@ html {
     transform: translate(-50%, -50%);
     opacity: 0;
     overflow: hidden;
-    transition: 1s opacity, 1s top;
+    transition: .5s opacity, .5s top;
 }
 .schema-plan-image .schema-3 {
     position: absolute;
@@ -218,7 +293,7 @@ html {
     transform: translate(-50%, -50%);
     opacity: 0;
     overflow: hidden;
-    transition: 1s opacity, 1s top;
+    transition: .5s opacity, .5s top;
 }
 .schema-plan-image .schema-1_animation {
     opacity: 1;
@@ -269,6 +344,7 @@ html {
     overflow: hidden;
     border-radius: 10px;
     border: 2px solid #A59D70;
+    transition: .5s color, .5s background;
 }
 .btn2 {
     width: 120px;
@@ -342,7 +418,6 @@ html {
 
 .contact-container {
     width: 100%;
-    height: 50vh;
 }
 
 .contact-container .title {
@@ -374,11 +449,31 @@ html {
 .contact-column .contact-info {
     margin-right: 60px;
 }
-.contact-column .contact-info h1 {
+.contact-info {
+    width: 380px;
+}
+.contact-info .company-logo img {
+    width: 140px;
+}
+.contact-column .contact-info .number {
+    margin-top: 20px;
+}
+.contact-column .contact-info .number h1 {
     color: #C73744;
     font-size: 24px;
 }
-.contact-column .contact-info p {
+.contact-column .contact-info .number p {
+    padding: 5px 0;
+    font-size: 18px;
+}
+.contact-column .contact-info .about {
+    margin-top: 20px;
+}
+.contact-column .contact-info .about h1 {
+    color: #C73744;
+    font-size: 24px;
+}
+.contact-column .contact-info .about p {
     padding: 5px 0;
     font-size: 18px;
 }
@@ -523,6 +618,85 @@ html {
     align-items: flex-start;
     justify-content: center;
 }
+
+.about-extorer .image {
+    width: 600px;
+    height: 360px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 3px solid #A58E0E;
+}
+
+.model-slider {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.slider .close-icon {
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.slider .model-image-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.poition-btn-1 {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+.poition-btn-2 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+.right-icon {
+    position: relative;
+    right: 0;
+    width: 50px;
+    height: 100px;
+    cursor: pointer;
+    background: url(../img/svg/right.icon.svg) no-repeat;
+    background-size: contain;
+    animation: .7s ease-in-out 0s infinite alternate icon_right_animation;
+
+}
+.left-icon {
+    position: relative;
+    left: 0;
+    width: 50px;
+    height: 100px;
+    cursor: pointer;
+    background: url(../img/svg/left.icon.svg) no-repeat;
+    background-size: contain;
+    animation: .7s ease-in-out 0s infinite alternate icon_left_animation;
+}
+
 .about-extorer .p-1 {
     width: 640px;
     margin-right: 60px;
@@ -604,6 +778,16 @@ html {
 @keyframes icon_bottom_animation {
     to {
         top: 20px;
+    }
+}
+@keyframes icon_right_animation {
+    to {
+        right: 20px;
+    }
+}
+@keyframes icon_left_animation {
+    to {
+        left: 20px;
     }
 }
 @keyframes text_shadow_animation {
