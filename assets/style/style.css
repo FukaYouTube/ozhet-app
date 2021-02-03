@@ -453,10 +453,10 @@ html {
     width: 380px;
 }
 .contact-info .company-logo img {
-    width: 140px;
-}
-.contact-column .contact-info .number {
     margin-top: 20px;
+    
+    width: 120px;
+    opacity: .5;
 }
 .contact-column .contact-info .number h1 {
     color: #C73744;
@@ -546,7 +546,7 @@ html {
 
 .type-selection-btns {
     position: absolute;
-    left: 40px;
+    left: 100px;
     top: 10px;
 
     display: flex;
